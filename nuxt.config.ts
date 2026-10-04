@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  // 弱网离线工具，纯客户端 SPA：Naive UI 依赖 document，localStorage 状态也只在浏览器侧
+  ssr: false,
   devtools: { enabled: false },
   compatibilityDate: "2025-07-15",
   modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/i18n"],
